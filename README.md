@@ -1,44 +1,51 @@
-# AllSport - Sports & Esports Live Gateway
-
-![AllSport](https://images.unsplash.com/photo-1541534741688-2947dfeb6f0d?auto=format&fit=crop&q=80&w=1200)
-
 <div align="center">
-  <h2>👉 <a href="https://allsport-psi.vercel.app">TRUY CẬP TRANG WEB CHÍNH THỨC (LIVE)</a> 👈</h2>
+  <img src="https://images.unsplash.com/photo-1541534741688-2947dfeb6f0d?auto=format&fit=crop&q=80&w=1200" alt="AllSport Banner" style="border-radius: 15px;" />
+  
+  <br />
+  <br />
+
+  <h1>🏆 AllSport - Nền Tảng Thể Thao & Esports</h1>
+
+  <p>
+    <strong>Luôn cập nhật nhịp đập thể thao truyền thống và Esports nhanh nhất đến thiết bị của bạn.</strong>
+  </p>
+
+  <a href="https://allsport-psi.vercel.app" target="_blank">
+    <img src="https://img.shields.io/badge/🌍_Trải_Nghiệm_Web_Trực_Tiếp_Tại_Đây-000000?style=for-the-badge&logo=vercel&logoColor=white" alt="Live Demo" />
+  </a>
 </div>
 
-AllSport là ứng dụng web Full-stack chuyên cập nhật tin tức, lịch thi đấu, bảng xếp hạng các giải đấu Thể thao truyền thống và Thể thao điện tử (Esports).
+<br />
+<hr />
 
-## ⚡ Tính Năng
+## 📖 Giới Thiệu Về Dự Án
+**AllSport** là một dự án ứng dụng web toàn diện (Full-stack) được xây dựng dành cho những người đam mê thể thao. Trang web tập trung vào việc quản lý và cung cấp nhanh nhất các bảng tin, lịch thi đấu trực tiếp và hệ thống xếp hạng theo giải đấu. 
 
-- **Live Match Tracking**: Cập nhật tỷ số, lịch thi đấu trực tiếp.
-- **Dynamic Standings**: Bảng xếp hạng tự động phân rã theo nhóm giải đấu (League).
-- **Core CMS**: Dữ liệu vận hành tự động thông qua Database trung tâm.
-- **UI/UX**: Giao diện ứng dụng phong cách Glassmorphism, Micro-interactions chuẩn hiện đại.
+Thay vì sử dụng các bộ khung CSS có sẵn, ứng dụng được code tay 100% về giao diện bằng phong cách **Glassmorphism** tươi sáng mạnh mẽ, mang lại một không gian đọc tin tức cực kỳ mượt mà, cao cấp và chuyên nghiệp.
 
-## 💻 Công Nghệ
-- **Client**: React.js / Vite
-- **Server**: Node.js / Express.js
-- **Database**: MongoDB / Mongoose
+## ⚡ Tính Năng Nổi Bật
+- **🔴 Lịch thi đấu Trực tiếp:** Hiển thị tức thời tỷ số các trận đấu đang diễn ra.
+- **📰 Chuyên trang Tin Tức:** Luồng đọc báo chi tiết, cuộn trang mượt mà không độ trễ.
+- **🏆 Bảng xếp hạng Động:** Tự động bắt cặp, phân rã và sắp xếp bảng xếp hạng chi tiết theo từng hạng mục hoặc giải đấu.
+- **☁️ Dữ liệu Cloud thời gian thực:** Mọi thông tin trên web đều đọc tự động dựa trên Cơ sở dữ liệu, không có các dữ liệu chết (Hard-code).
 
-## 🚀 Cài Đặt (Local Development)
+## 🛠️ Ngôn Ngữ & Công Nghệ (Tech Stack)
+Dự án được xây dựng toàn diện trên kiến trúc **MERN Stack**:
 
-### Yêu cầu
-- Node.js (v18+)
-- MongoDB Community Server (chạy tại port mặc định `27017`)
+### 🎯 Giao Diện (Frontend)
+- ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB) **React.js** (thông qua Vite)
+- ![Vanilla CSS](https://img.shields.io/badge/vanilla%20css-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white) Thuần CSS cấp độ nâng cao (Custom Variables, Animations)
 
-### Khởi chạy môi trường
+### ⚙️ Máy Chủ (Backend)
+- ![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white) **Node.js**
+- ![Express.js](https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB) **Express.js** 
 
-**1. Khởi tạo Backend & Database**
-```bash
-cd backend
-npm install
-node seed.js      # Nạp dữ liệu mẫu
-npm run dev       # API chạy tại http://localhost:5000
-```
+### 🗄️ Cơ Sở Dữ Liệu & Triển Khai (Cloud)
+- ![MongoDB](https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white) **MongoDB Atlas** (Mongoose ODM)
+- ![Vercel](https://img.shields.io/badge/vercel-%23000000.svg?style=for-the-badge&logo=vercel&logoColor=white) **Vercel** (Lưu trữ và chạy Frontend)
+- ![Render](https://img.shields.io/badge/Render-%46E3B7.svg?style=for-the-badge&logo=render&logoColor=white) **Render** (Máy chủ Web Service API)
 
-**2. Khởi chạy Client**
-```bash
-cd frontend
-npm install
-npm run dev       # App chạy tại http://localhost:5173
-```
+---
+<div align="center">
+  <i>Xây dựng & Phát triển bởi Parklang</i>
+</div>
