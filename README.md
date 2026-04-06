@@ -1,7 +1,7 @@
 <div align="center">
  <img width="2752" height="1536" alt="Gemini_Generated_Image_vf831qvf831qvf83" src="https://github.com/user-attachments/assets/e85c3964-34a0-414f-8ded-7fb46462939e" />
 
-" style="border-radius: 15px;" />
+
   
   <br />
   <br />
