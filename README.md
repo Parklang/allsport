@@ -1,5 +1,6 @@
 <div align="center">
-  <img src="https://images.unsplash.com/photo-1541534741688-2947dfeb6f0d?auto=format&fit=crop&q=80&w=1200" alt="AllSport Banner" style="border-radius: 15px;" />
+  <img src="<img width="2752" height="1536" alt="Gemini_Generated_Image_vf831qvf831qvf83" src="https://github.com/user-attachments/assets/8ff524b5-97d4-426f-a88e-e0a5f76bd81c" />
+" style="border-radius: 15px;" />
   
   <br />
   <br />
@@ -47,5 +48,5 @@ Dự án được xây dựng toàn diện trên kiến trúc **MERN Stack**:
 
 ---
 <div align="center">
-  <i>Xây dựng & Phát triển bởi Parklang</i>
+  <i>Xây dựng & Phát triển bởi Huy Hoàng</i>
 </div>
