@@ -8,7 +8,7 @@ const Schedule = () => {
   useEffect(() => {
     const fetchMatches = async () => {
       try {
-        const res = await axios.get('http://localhost:5000/api/matches');
+        const res = await axios.get('https://allsport.onrender.com/api/matches');
         setMatches(res.data);
       } catch (err) {
         console.error("Lỗi:", err);

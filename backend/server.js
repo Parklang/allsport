@@ -26,5 +26,5 @@ app.use('/api/news', newsRoutes);
 app.use('/api/standings', standingRoutes);
 
 app.listen(PORT, () => {
-  console.log(`🚀 Server đang chạy tại http://localhost:${PORT}`);
+  console.log(`🚀 Server đang chạy tại http://localhost:${PORT} (Atlas Cloud)`);
 });

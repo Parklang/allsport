@@ -10,8 +10,8 @@ const Home = () => {
     const fetchData = async () => {
       try {
         const [matchesRes, newsRes] = await Promise.all([
-          axios.get('http://localhost:5000/api/matches/live'),
-          axios.get('http://localhost:5000/api/news')
+          axios.get('https://allsport.onrender.com/api/matches/live'),
+          axios.get('https://allsport.onrender.com/api/news')
         ]);
         setLiveMatches(matchesRes.data);
         setNews(newsRes.data.slice(0, 3));

@@ -8,7 +8,7 @@ const Standings = () => {
   useEffect(() => {
     const fetchStandings = async () => {
       try {
-        const res = await axios.get('http://localhost:5000/api/standings');
+        const res = await axios.get('https://allsport.onrender.com/api/standings');
         setStandings(res.data);
       } catch (err) {
         console.error("Lỗi tải Bảng xếp hạng:", err);
@@ -37,7 +37,7 @@ const Standings = () => {
           <h2 style={{ marginBottom: "1rem", color: "var(--accent-hover)", fontSize: "1.4rem" }}>{leagueKey}</h2>
           <div className="glass-card" style={{ overflowX: "auto", padding: 0 }}>
             <table style={{ width: "100%", borderCollapse: "collapse", textAlign: "left" }}>
-              <thead style={{ background: "rgba(0,0,0,0.2)" }}>
+              <thead style={{ background: "rgba(0,0,0,0.03)" }}>
                 <tr>
                   <th style={{ padding: "1rem 1.5rem" }}>Đội tuyển / CLB</th>
                   <th style={{ padding: "1rem 1.5rem", textAlign: "center" }}>Số Trận</th>
@@ -67,7 +67,7 @@ const Standings = () => {
       )}
 
       <style>{`
-        .table-row-hover:hover { background: rgba(255,255,255,0.02); }
+        .table-row-hover:hover { background: rgba(0,0,0,0.02); }
         @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
       `}</style>
     </div>
