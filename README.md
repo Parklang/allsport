@@ -2,6 +2,9 @@
 
 ![AllSport Banner](https://images.unsplash.com/photo-1541534741688-2947dfeb6f0d?auto=format&fit=crop&q=80&w=1200)
 
+🌍 **[▶ TRUY CẬP TRANG WEB TRỰC TIẾP TẠI ĐÂY (Live Demo) ◀](https://allsport-live.vercel.app)**  
+*(Lưu ý: Link hiển thị là mẫu minh họa. Vui lòng xem hướng dẫn [Deploy](#-hướng-dẫn-đưa-lên-mạng-deploy) bên dưới để tự cấu hình thành link thật mang tên bạn)*
+
 **AllSport** là một ứng dụng web toàn diện (Full-Stack MERN) chuyên cung cấp thông tin, lịch thi đấu, bảng xếp hạng và tin tức thuộc lĩnh vực Thể thao truyền thống & Thể thao điện tử (Esports). 
 
 Dự án thiết kế với giao diện cao cấp (Premium UI) mang phong cách Dark-mode, tích hợp các hiệu ứng Glassmorphism hiện đại giúp mang lại trải nghiệm thao tác mượt mà và trực quan nhất cho người dùng.
@@ -88,6 +91,19 @@ npm run dev
 
 ### Bước 4: Tận Hưởng
 Truy cập qua URL mà bộ mô phỏng báo lại (Thường là: `http://localhost:5173/`). Các thông tin DB sẽ tự động hiển thị ra bên ngoài Web, việc quản trị Database chỉ cần làm thông qua ứng dụng `MongoDB Compass` rất tiện dụng.
+
+---
+
+## ☁️ Hướng Dẫn Đưa Lên Mạng (Deploy)
+
+Vì AllSport là kiến trúc Full-Stack, để website chạy trên nền tảng Internet cho toàn thế giới truy cập, hãy tuân theo 3 bước deploy hoàn toàn miễn phí này:
+
+1. **Đưa CSDL lên Đám mây (MongoDB Atlas):** Truy cập trang chủ [MongoDB Atlas](https://www.mongodb.com/atlas/database), tạo một Cluster miễn phí 100%. Mở quyền truy cập IP `= 0.0.0.0/0`. Lấy chuỗi *Connection String* của Atlas và thay vào dòng `MONGODB_URI` trong file `backend/.env`.
+2. **Đưa Backend lên Render (hoặc Railway):** Truy cập [Render.com](https://render.com/), tạo Web Service mới, tự động kết nối với repo GitHub này. Khai báo Root Directory là `backend`, Build Command là `npm install`, Start Command là `node server.js`. Hãy nhớ khai báo các môi trường (Environment Variables) trên Render trùng với file `.env`. Sau khi deploy, bạn sẽ được cấp một URL máy chủ Backend (VD: `https://allsport-api.onrender.com`).
+3. **Đưa Frontend lên Vercel:** 
+   - Quay lại code trên máy tính, sử dụng cửa sổ tìm kiếm toàn diện (Ctrl+Shift+F trên VSCode) để tìm chữ `http://localhost:5000` và đổi toàn bộ chúng thành *URL máy chủ Backend mà Render vừa cấp*. Đẩy code lên GitHub lần cuối (`git push origin main`).
+   - Đăng nhập [Vercel.com](https://vercel.com/) bằng tài khoản GitHub, nhấn **Import Project** và chọn repo `allsport` của bạn. Sửa Root Directory thành thư mục `frontend` -> Nhấn **Deploy**.
+   - Chưa tới 1 phút, Vercel sẽ vinh danh bạn bằng một link trang chủ Frontend thật. Bây giờ bạn chỉ việc thay đường link đó vào đầu cái README này, và gửi nó cho bạn bè để khoe trang web thể thao của riêng bạn!
 
 ---
 
