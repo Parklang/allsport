@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 import axios from 'axios';
 
 const Home = () => {
@@ -59,14 +60,14 @@ const Home = () => {
         <h2>📰 Tin Tức Mới Nhất</h2>
         <div className="flex gap-4" style={{ flexWrap: "wrap" }}>
           {news.length > 0 ? news.map((item) => (
-            <div key={item._id} className="glass-card" style={{ flex: "1 1 300px", padding: 0, overflow: "hidden" }}>
+            <Link key={item._id} to={`/news/${item._id}`} className="glass-card" style={{ flex: "1 1 300px", padding: 0, overflow: "hidden", display: "block" }}>
               <img src={item.imageUrl} alt={item.title} style={{ width: "100%", height: "200px", objectFit: "cover" }} />
               <div style={{ padding: "1.5rem" }}>
                 <span style={{ fontSize: "0.875rem", color: "var(--accent-hover)", fontWeight: "500" }}>{item.category}</span>
                 <h3 style={{ margin: "0.5rem 0", fontSize: "1.2rem" }}>{item.title}</h3>
                 <p style={{ color: "var(--text-secondary)", fontSize: "0.95rem", lineHeight: "1.5" }}>{item.excerpt}</p>
               </div>
-            </div>
+            </Link>
           )) : <p>Đang cập nhật tin tức.</p>}
         </div>
       </section>

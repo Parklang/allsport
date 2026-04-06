@@ -11,4 +11,14 @@ router.get('/', async (req, res) => {
   }
 });
 
+router.get('/:id', async (req, res) => {
+  try {
+    const article = await News.findById(req.params.id);
+    if (!article) return res.status(404).json({ message: 'Không tìm thấy bài viết' });
+    res.json(article);
+  } catch (err) {
+    res.status(500).json({ message: err.message });
+  }
+});
+
 module.exports = router;

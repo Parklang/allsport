@@ -4,6 +4,7 @@ import Navbar from './components/Navbar';
 import Home from './pages/Home';
 import Standings from './pages/Standings';
 import News from './pages/News';
+import NewsDetail from './pages/NewsDetail';
 import Schedule from './pages/Schedule';
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
             <Route path="/schedule" element={<Schedule />} />
             <Route path="/standings" element={<Standings />} />
             <Route path="/news" element={<News />} />
+            <Route path="/news/:id" element={<NewsDetail />} />
           </Routes>
         </main>
       </div>
